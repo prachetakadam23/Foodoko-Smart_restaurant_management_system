@@ -22,14 +22,14 @@ Server: XAMPP (Apache + MySQL)
 
 1. Prerequisites
    
-  -Install XAMPP (Apache + MySQL).
+      -Install XAMPP (Apache + MySQL).
   
-  -Git (optional, for cloning the repository).
+      -Git (optional, for cloning the repository).
   
-  -A modern web browser (Chrome/Edge/Firefox).
+      -A modern web browser (Chrome/Edge/Firefox).
    
 
-3. Clone or Download the Project:
+2. Clone or Download the Project:
  
         git clone https://github.com/prachetakadam23/Foodoko-Smart_restaurant_management_system.git
    
@@ -37,29 +37,37 @@ Server: XAMPP (Apache + MySQL)
 
 
 3. Move Project to htdocs
-  Copy the project folder into the XAMPP htdocs directory.
-   Example (Windows default path):
+   
+      Copy the project folder into the XAMPP htdocs directory.
+   
+      Example (Windows default path):
    
         C:\xampp\htdocs\foodoko
 
 
 4. Start XAMPP Services
-  -Open XAMPP Control Panel
-  -Start Apache and MySQL
+   
+      -Open XAMPP Control Panel
+  
+      -Start Apache and MySQL
 
 
 5. Configure the Database
-   1. Open phpMyAdmin
-   2. Create a new database
+   
+    i. Open phpMyAdmin
+   
+    ii. Create a new database
 
           foodoko
-   3.Import the SQL schema from:
+   
+    iii.Import the SQL schema from:
 
         /database/foodoko.sql
 
 
 6. Update Database Connection (if needed)
-  -Open backend/config.php (or wherever DB connection is handled) and check:
+   
+    -Open backend/config.php (or wherever DB connection is handled) and check:
    
        $host = "localhost";
        $user = "root";       // default user for XAMPP
