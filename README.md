@@ -21,12 +21,15 @@ Server: XAMPP (Apache + MySQL)
     
 
 1. Prerequisites
+   
   -Install XAMPP (Apache + MySQL).
+  
   -Git (optional, for cloning the repository).
+  
   -A modern web browser (Chrome/Edge/Firefox).
    
 
-2. Clone or Download the Project:
+3. Clone or Download the Project:
  
         git clone https://github.com/prachetakadam23/Foodoko-Smart_restaurant_management_system.git
    
