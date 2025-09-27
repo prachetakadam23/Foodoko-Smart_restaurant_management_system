@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodoko - Smart Restaurant</title>
+  <link rel="stylesheet" href="css/cssres.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="contact">
+      <span>📍 Meswcoe, Koregaon Park, Pune</span>
+      <span>📞 Have questions? <a >(+91)987654322</a></span>
+    </div>
+    <div class="navbar">
+      <div class="logo">Foodoko <small>ITALIAN RESTAURANT</small></div>
+      <nav>
+        <nav>
+            <button id="navmenu"><a href="#menu" id="navmenut">Menu</a></button>
+            <button id="navorder"><a href="#order">Order Now</a></button>
+            <button id="navreserve"><a href="#reservations">Reservations</a></button>
+        </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Local fresh <span class="accent">cuisine</span><br>for everyone</h1>
+    <img src="css/logo.avif" alt="Delicious Italian food" />
+  </section>
+
+  <section class="description">
+    <p>
+      The <span class="accent">enticing menu</span> emphasizes authentic Italian cuisine prepared with the best
+      ingredients mainly imported directly from <span class="red">Italy</span>.
+    </p>
+  </section>
+
+  
+
+<section id="menu">
+    <div class="bg"> 
+        <h2>Our Menu</h2>
+        <div class="menu-itemo">
+            <h3>Pizza</h3>
+            <br>
+            <p> Delicious Italian pizza.(Rs 350)</p>
+            <br>
+            <p> Pizza Napoletana  (Rs 450)</p>
+            <br>
+            <p>Pizza alla Pala. (Rs 450)</p>
+        </div>
+        <div class="menu-itemt">
+            <h3>Pasta</h3>
+            <br>
+            <p>Creamy Alfredo pasta.(Rs 300)</p>
+            <br>
+            <p>Spaghetti Bolognaise (Rs 480)</p>
+            <br>
+            <p>Lasagne (Rs 500)</p>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <div class="secondtab">
+        <h2>Order Now</h2>
+    </div>
+    <div class="second">
+        <form action="process_order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Your Name" required>
+            <label for="menu_item">Select Menu Item:</label>
+            <select name="menu_item">
+                <option value="Delicious Italian pizza.">Delicious Italian pizza.</option>
+                <option value="Pizza Napoletana">Pizza Napoletana</option>
+                <option value="Pizza alla Pala">Pizza alla Pala.</option>
+                <option value="Creamy Alfredo pasta">Creamy Alfredo pasta</option>
+                <option value="Spaghetti Bolognaise">Spaghetti Bolognaise</option>
+                <option value="Lasagne">Lasagne</option>
+            </select>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <button type="submit" id="placemy">Place Order</button>
+        </form>
+    </div>
+</section>
+
+<section id="reservations">
+    <div class="thirdtab">
+        <h2 id="textmy">Reservations</h2>
+    </div>    
+    <div class="thirdmain">
+        <form action="process_reservation.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Your Name" required>
+            <input type="text" name="contact" placeholder="Contact Number" required>
+            <input type="datetime-local" name="reservation_time" required>
+            <input type="number" name="table_number" placeholder="Table Number" required>
+            <button type="submit">Reserve</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Foodoko. All rights reserved.</p>
+</footer>
+</body>
+</html>
