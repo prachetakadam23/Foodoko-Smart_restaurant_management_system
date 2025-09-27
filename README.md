@@ -39,11 +39,11 @@ Foodoko is a Smart Restaurant Management System built to streamline the dining e
 
 3. Move Project to htdocs
    
-      Copy the project folder into the XAMPP htdocs directory.
+      - Copy the project folder into the XAMPP htdocs directory.
    
-      Example (Windows default path):
+      - Example (Windows default path):
    
-        C:\xampp\htdocs\foodoko
+            C:\xampp\htdocs\foodoko
 
 
 4. Start XAMPP Services
@@ -55,15 +55,15 @@ Foodoko is a Smart Restaurant Management System built to streamline the dining e
 
 5. Configure the Database
    
-    i. Open phpMyAdmin
+      - Open phpMyAdmin
    
-    ii. Create a new database
+      - Create a new database
 
-          foodoko
+            foodoko
    
-    iii.Import the SQL schema from:
+      - Import the SQL schema from
 
-        /database/foodoko.sql
+              /database/foodoko.sql
 
 
 6. Update Database Connection (if needed)
@@ -79,9 +79,9 @@ Foodoko is a Smart Restaurant Management System built to streamline the dining e
 
 7. Run the Project
    
-  - Open browser and visit:
+     - Open browser and visit:
    
-        http://localhost/foodoko/index.html
+            http://localhost/foodoko/index.html
    
 
 🎉 That’s it! The Foodoko Smart Restaurant Management System is now running on your local server.
